@@ -2,6 +2,8 @@
 
 Checkpoint 6 de Front-End (vibecoding): meu portfólio pessoal, construído com IA generativa, com skills, projetos de 2026, experiência e eventos. Como pede o enunciado, o processo (referências, identidade visual, prompts e correções) está documentado junto com o código.
 
+**Deploy:** https://cp6-frontend-nine.vercel.app
+
 ## A página
 
 **DO BACK / AO FRONT.** O portfólio trata a página como um monumento tipográfico e vai do escuro (o back-end, que ninguém vê) ao claro (a interface que o cliente usa). O estilo foi inspirado no portfólio de Dylan Brouwer, tirado do [styles.refero.design](https://styles.refero.design).
