@@ -90,3 +90,23 @@ Registro da conversa com a IA (Claude Code) durante o Checkpoint 6. Cada rodada 
 > [print do "DEV POR PEDRO CORSINI / SP ● 12:45 BRT", guardado em `prints/correcao-03-trecho-meta.png`] mova esse texto para alguns pixels acima do monitor. nao mexa no texto construo apis...
 
 **IA fez:** colocou a meta no fundo da linha flexível da grade do hero no mobile, logo acima do monitor, sem tocar na regra do "Construo APIs...". Na medição viu que a meta tinha ido para trás do monitor (a margem negativa do desktop voltou a valer quando a margem do mobile foi removida) e zerou essa margem no mobile. Resultado: meta 11px acima da tela do monitor em 320, 375 e 430px. Efeito colateral avisado: o "Construo APIs..." subiu e ficou 12px abaixo do título. Ficha em `correcoes.md` (Correção 3).
+
+## Rodada 8. Correção 4: contraste da nav
+
+Entre a rodada 7 e esta houve pedidos de organização da entrega (criar o repositório, commits, deploy na Vercel e uma revisão da nota contra o enunciado). Eles não mudaram a página e não fazem parte das correções, então ficaram fora deste log.
+
+Na revisão da nota, a IA listou o que faltava, e o item 3 era "Correção 4: contraste da nav sobre as seções claras".
+
+**Pedi:**
+> 3. correcao, pode fzr
+
+**IA fez:** marcou cada seção da página como clara ou escura e fez a nav trocar para a versão clara da ficha (fundo claro, borda fina e texto grafite) sobre fundo claro. Com o menu do celular aberto, a nav volta para a versão escura. Testou em 29 posições de rolagem e no celular com o menu aberto e fechado. Ficha em `correcoes.md` (Correção 4).
+
+## Rodada 9. Correção 5: título atrás da nav e botão "Menu"
+
+Na revisão de requisitos, a IA listou duas pendências da página no item 2: o título da seção escondido atrás da nav ao clicar num link e o botão "Menu" que não vira "Fechar".
+
+**Pedi:**
+> 2. pode ajustar isso e ja subir, ai tudo ok
+
+**IA fez:** deu às seções uma margem de rolagem de 72px, para o título parar abaixo da nav fixa, e fez o botão do menu do celular mostrar "Fechar" enquanto o menu está aberto. Testou os 5 links da nav no desktop e o menu do celular (abrir, link, Esc). Ficha em `correcoes.md` (Correção 5).
