@@ -49,6 +49,9 @@
 
 html { scroll-behavior: smooth; }
 
+/* ao navegar pelos links, o topo da seção para abaixo da nav fixa, não atrás dela */
+main section[id], footer[id] { scroll-margin-top: 72px; }
+
 body {
   margin: 0;
   background: var(--paper);

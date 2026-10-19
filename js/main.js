@@ -62,19 +62,22 @@ if (reduzMovimento || !('IntersectionObserver' in window)) {
 
 // Menu mobile
 const botaoMenu = document.querySelector('.nav__menu');
+const textoMenu = botaoMenu.querySelector('.nav__menu-texto');
 const menuMobile = document.getElementById('menu-mobile');
 
+function definirMenu(aberto) {
+  botaoMenu.setAttribute('aria-expanded', String(aberto));
+  textoMenu.textContent = aberto ? 'Fechar' : 'Menu';
+  menuMobile.hidden = !aberto;
+  document.body.style.overflow = aberto ? 'hidden' : '';
+}
+
 function fecharMenu() {
-  botaoMenu.setAttribute('aria-expanded', 'false');
-  menuMobile.hidden = true;
-  document.body.style.overflow = '';
+  definirMenu(false);
 }
 
 botaoMenu.addEventListener('click', () => {
-  const abrir = botaoMenu.getAttribute('aria-expanded') !== 'true';
-  botaoMenu.setAttribute('aria-expanded', String(abrir));
-  menuMobile.hidden = !abrir;
-  document.body.style.overflow = abrir ? 'hidden' : '';
+  definirMenu(botaoMenu.getAttribute('aria-expanded') !== 'true');
 });
 
 menuMobile.addEventListener('click', (evento) => {
