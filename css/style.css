@@ -650,17 +650,17 @@ a.tag--escura:hover { background: var(--graphite); }
 
   .hero {
     grid-template-columns: minmax(0, 1fr);
-    /* textos sobem para baixo do título; a linha 1fr empurra o monitor até a mesa, como no desktop */
-    grid-template-rows: auto auto auto 1fr auto;
+    /* título, tagline, meta (fundo da linha 1fr, colada no monitor), monitor e mesa */
+    grid-template-rows: auto auto auto 1fr auto auto;
     padding-top: 96px;
   }
   /* 25vw: a linha mais larga ("AO FRONT" inclinado) mede ~3,65× a fonte, então ocupa ~91% da tela */
   .hero__titulo { font-size: clamp(64px, 25vw, 160px); }
-  .hero__meta { grid-column: 1; grid-row: 2; justify-self: center; text-align: center; margin-top: var(--s24); }
+  .hero__meta { grid-column: 1; grid-row: 4; align-self: end; justify-self: center; text-align: center; margin: var(--s24) 0 var(--s12); }
   .hero__tagline { grid-column: 1; grid-row: 3; justify-self: center; text-align: center; margin-top: var(--s12); max-width: 30ch; }
-  .monitor { grid-column: 1; grid-row: 4; margin-top: var(--s24); width: 100%; }
+  .monitor { grid-column: 1; grid-row: 5; margin-top: 0; width: 100%; } /* anula a margem negativa do desktop */
   .monitor__tela { transform: rotateY(-8deg) rotateX(3deg); border-width: 6px; border-bottom-width: 9px; }
-  .hero__mesa { grid-row: 5; }
+  .hero__mesa { grid-row: 6; }
 
   .projetos__grade { grid-template-columns: 1fr; }
   .projetos__grade .projeto:nth-child(even) { margin-top: 0; }
