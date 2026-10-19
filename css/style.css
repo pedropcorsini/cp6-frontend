@@ -127,7 +127,7 @@ ul, ol { padding: 0; list-style: none; }
   text-transform: uppercase;
   text-decoration: none;
   cursor: pointer;
-  transition: background-color 0.3s var(--entrar), color 0.3s var(--entrar);
+  transition: background-color 0.3s var(--entrar), color 0.3s var(--entrar), border-color 0.3s var(--entrar);
 }
 .pilula:hover { background: var(--fog); color: var(--onyx); }
 
@@ -182,9 +182,25 @@ a.tag--escura:hover { background: var(--graphite); }
   line-height: 1;
   color: var(--fog);
   text-decoration: none;
-  mix-blend-mode: difference;
+  transition: color 0.3s var(--entrar);
 }
 .nav__logo sup { font-family: var(--f-mono); font-size: 9px; vertical-align: top; }
+
+/* sobre seções claras a nav vira a "Pill Nav Button" da ficha: borda fina e texto grafite */
+.nav--clara .nav__logo { color: var(--onyx); }
+.nav--clara .pilula {
+  background: rgba(248, 248, 248, 0.7);
+  border-color: rgba(60, 58, 62, 0.15);
+  color: var(--graphite);
+}
+.nav--clara .pilula:hover { background: var(--onyx); color: var(--fog); }
+/* com o menu mobile aberto (fundo preto) a nav volta para a versão escura */
+.nav--clara:has(.nav__menu[aria-expanded="true"]) .nav__logo { color: var(--fog); }
+.nav--clara:has(.nav__menu[aria-expanded="true"]) .pilula {
+  background: rgba(22, 22, 22, 0.35);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: var(--fog);
+}
 
 .nav__links { display: flex; gap: var(--s6); margin-inline: auto; }
 .nav__menu { display: none; }

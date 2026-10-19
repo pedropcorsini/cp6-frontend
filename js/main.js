@@ -103,3 +103,15 @@ if (!reduzMovimento && window.matchMedia('(hover: hover)').matches) {
     cracha.style.transform = '';
   });
 }
+
+// Nav troca para a versão clara quando passa sobre uma seção de fundo claro
+const nav = document.querySelector('.nav');
+const observadorNav = new IntersectionObserver((entradas) => {
+  entradas.forEach((entrada) => {
+    if (entrada.isIntersecting) {
+      nav.classList.toggle('nav--clara', entrada.target.dataset.nav === 'claro');
+    }
+  });
+}, { rootMargin: '0px 0px -94% 0px' }); // faixa de observação: os ~6% do topo, onde a nav fica
+
+document.querySelectorAll('[data-nav]').forEach((secao) => observadorNav.observe(secao));
