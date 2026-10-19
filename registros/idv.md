@@ -43,4 +43,4 @@ Moderno, técnico e direto. No layout aparece como cantos retos nos cards, pílu
 
 - **Degradê do título:** a ficha manda o degradê ir do preto para o claro sobre fundo `#161616`. Seguindo isso ao pé da letra, o topo das letras (preto) sumiria no fundo preto. Segui o que o vídeo da referência mostra de fato: letras claras no topo escurecendo para baixo.
 - **Laranja no rodapé:** a ficha diz para nunca usar o laranja como fundo, mas o vídeo mostra o rodapé com um degradê laranja. Segui o vídeo, só no rodapé, como fechamento.
-- **Itálico do "AO FRONT":** o Anton não tem itálico, então a inclinação é feita com `skewX(-1
+- **Itálico do "AO FRONT":** o Anton não tem itálico, então a inclinação é feita com `skewX(-10deg)`.
