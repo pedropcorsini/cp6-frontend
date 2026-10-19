@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pedro Corsini · Do back ao front</title>
+  <meta name="description" content="Portfólio de Pedro Passos Corsini, estudante de Engenharia de Software na FIAP e desenvolvedor freelancer. APIs em Python e sites que convertem.">
+  <meta name="theme-color" content="#161616">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=IBM+Plex+Mono:wght@500;600&family=Inter:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- NAV: pílulas flutuando sobre o hero, sem barra de fundo -->
+  <header class="nav">
+    <a class="nav__logo" href="#topo" aria-label="Pedro Corsini, voltar ao topo">PC<sup>®</sup></a>
+
+    <nav class="nav__links" aria-label="Seções">
+      <a class="pilula" href="#sobre"><span aria-hidden="true">+</span> Sobre</a>
+      <a class="pilula" href="#projetos"><span aria-hidden="true">+</span> Projetos</a>
+      <a class="pilula" href="#skills"><span aria-hidden="true">+</span> Skills</a>
+      <a class="pilula" href="#trajetoria"><span aria-hidden="true">+</span> Trajetória</a>
+    </nav>
+
+    <a class="pilula pilula--contato" href="#contato"><span class="ponto" aria-hidden="true"></span> Contato</a>
+
+    <button class="pilula nav__menu" type="button" aria-expanded="false" aria-controls="menu-mobile">
+      <span class="ponto" aria-hidden="true"></span> Menu
+    </button>
+  </header>
+
+  <div class="menu-mobile" id="menu-mobile" hidden>
+    <nav aria-label="Seções (menu)">
+      <a href="#sobre">Sobre</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#skills">Skills</a>
+      <a href="#trajetoria">Trajetória</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </div>
+
+  <main id="conteudo">
+
+    <!-- 1. HERO -->
+    <section class="hero" id="topo" aria-labelledby="hero-titulo">
+      <h1 class="hero__titulo" id="hero-titulo" aria-label="Do back ao front">
+        <span class="hero__linha entra" style="--i:0" aria-hidden="true">Do back</span>
+        <span class="hero__linha hero__linha--inclinada entra" style="--i:1" aria-hidden="true">ao front</span>
+      </h1>
+
+      <p class="hero__meta mono entra" style="--i:3">
+        Dev por Pedro Corsini<br>
+        SP <span class="ponto ponto--vivo" aria-hidden="true"></span> <time id="relogio" datetime="">--:--</time> BRT
+      </p>
+
+      <p class="hero__tagline entra" style="--i:4">Construo APIs em Python e sites que viram cliente, do banco de dados ao último pixel.</p>
+
+      <div class="monitor entra" style="--i:2">
+        <div class="monitor__tela" id="monitor-tela">
+          <img class="ativa" src="img/projetos/tia-nena.jpg" alt="Site Tia Nena Hospedagem Pet" data-nome="Tia Nena" width="1440" height="900">
+          <img src="img/projetos/elo-hemo.jpg" alt="Site ELO Hemoterapia" data-nome="ELO Hemo" width="1440" height="900" loading="lazy">
+          <img src="img/projetos/renata-oftalmo.jpg" alt="Site Renata Oftalmo" data-nome="Renata Oftalmo" width="1440" height="900" loading="lazy">
+          <img src="img/projetos/rc-motorista.jpg" alt="Site RC Motorista" data-nome="RC Motorista" width="1440" height="900" loading="lazy">
+          <img src="img/projetos/tati-gastro.jpg" alt="Site Tati Gastro" data-nome="Tati Gastro" width="1440" height="900" loading="lazy">
+          <img src="img/projetos/macro-tracker.jpg" alt="App Macro Tracker" data-nome="Macro Tracker" width="1440" height="900" loading="lazy">
+          <img src="img/projetos/piccapture.jpg" alt="App PicCapture" data-nome="PicCapture" width="1440" height="900" loading="lazy">
+          <span class="tag tag--escura monitor__legenda"><span class="ponto" aria-hidden="true"></span> No ar: <span id="monitor-nome">Tia Nena</span></span>
+        </div>
+        <div class="monitor__pescoco" aria-hidden="true"></div>
+        <div class="monitor__base" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero__mesa" aria-hidden="true"></div>
+    </section>
+
+    <!-- 2. SOBRE -->
+    <section class="sobre" id="sobre" aria-labelledby="sobre-titulo">
+      <div class="container">
+        <h2 class="mono rotulo rotulo--claro" id="sobre-titulo"><span class="ponto" aria-hidden="true"></span> Sobre</h2>
+        <p class="sobre__texto" data-revelar>
+          Sou estudante de Engenharia de Software na FIAP e desenvolvedor freelancer. Gosto do lado de trás: APIs em Python com FastAPI e Django, bancos PostgreSQL e MongoDB, tarefas agendadas com Celery. Mas também entrego a parte da frente, com landing pages que transformam visita em conversa no WhatsApp.
+        </p>
+
+        <div class="sobre__rodape">
+          <figure class="sobre__foto" data-revelar>
+            <img src="img/pedro.jpg" alt="Pedro Corsini, de moletom cinza, tirando foto no espelho de um elevador de inox" width="460" height="460" loading="lazy">
+            <a class="tag tag--escura sobre__foto-tag" href="https://github.com/pedropcorsini" target="_blank" rel="noopener"><span class="ponto" aria-hidden="true"></span> GitHub</a>
+          </figure>
+
+          <dl class="sobre__numeros" data-revelar>
+            <div><dt class="mono">Sites de clientes no ar</dt><dd>5</dd></div>
+            <div><dt class="mono">Repositórios públicos</dt><dd>19</dd></div>
+            <div><dt class="mono">Semestre na FIAP</dt><dd>2º</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <div class="horizonte" aria-hidden="true"></div>
+
+    <!-- 3. PROJETOS -->
+    <section class="projetos" id="projetos" aria-labelledby="projetos-titulo">
+      <div class="container grade-linhas">
+        <header class="secao-cabeca" data-revelar>
+          <h2 class="titulo" id="projetos-titulo">Projetos de 2026</h2>
+          <p class="mono rotulo">Clientes, faculdade e estudos</p>
+        </header>
+
+        <div class="projetos__grade">
+
+          <article class="projeto projeto--1" data-revelar>
+            <a class="projeto__midia" href="https://www.tianenahospedagem.com" target="_blank" rel="noopener" aria-label="Abrir o site Tia Nena Hospedagem Pet">
+              <img src="img/projetos/tia-nena.jpg" alt="" width="1440" height="900" loading="lazy">
+              <ul class="tags projeto__tags" aria-label="Categorias">
+                <li class="tag tag--escura"><span class="ponto" aria-hidden="true"></span> Cliente</li>
+                <li class="tag tag--escura">Next.js</li>
+                <li class="tag tag--escura">Tailwind</li>
+              </ul>
+            </a>
+            <div class="projeto__info">
+              <h3>Tia Nena Hospedagem Pet</h3>
+              <p>Landing page para hospedagem de cães, pensada para transformar visita em conversa no WhatsApp.</p>
+              <p class="projeto__links mono">
+                <a href="https://www.tianenahospedagem.com" target="_blank" rel="noopener">Site ↗</a>
+                <a href="https://github.com/pedropcorsini/tia-nena-hospedagem-pet" target="_blank" rel="noopener">Repo ↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="projeto projeto--2" data-revelar>
+            <a class="projeto__midia" href="https://www.elohemo.com" target="_blank" rel="noopener" aria-label="Abrir o site ELO Hemoterapia">
+              <img src="img/projetos/elo-hemo.jpg" alt="" width="1440" height="900" loading="lazy">
+              <ul class="tags projeto__tags" aria-label="Categorias">
+                <li class="tag tag--escura"><span class="ponto" aria-hidden="true"></span> Cliente</li>
+                <li class="tag tag--escura">React</li>
+                <li class="tag tag--escura">Vite</li>
+              </ul>
+            </a>
+            <div class="projeto__info">
+              <h3>ELO Hemoterapia</h3>
+              <p>Site de um banco de sangue felino em São Paulo, com cadastro de gatos doadores e pedido de bolsa urgente.</p>
+              <p class="projeto__links mono">
+                <a href="https://www.elohemo.com" target="_blank" rel="noopener">Site ↗</a>
+                <span>Repo privado</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="projeto projeto--3" data-revelar>
+            <a class="projeto__midia" href="https://renata-oftalmo.vercel.app" target="_blank" rel="noopener" aria-label="Abrir o site Renata Oftalmo">
+              <img src="img/projetos/renata-oftalmo.jpg" alt="" width="1440" height="900" loading="lazy">
+              <ul class="tags projeto__tags" aria-label="Categorias">
+                <li class="tag tag--escura"><span class="ponto" aria-hidden="true"></span> Cliente</li>
+                <li class="tag tag--escura">Next.js</li>
+                <li class="tag tag--escura">Em desenvolvimento</li>
+              </ul>
+            </a>
+            <div class="projeto__info">
+              <h3>Renata Oftalmo</h3>
+              <p>Site de oftalmologia veterinária para cães e gatos, com agendamento direto pelo WhatsApp.</p>
+              <p class="projeto__links mono">
+                <a href="https://renata-oftalmo.vercel.app" target="_blank" rel="noopener">Site ↗</a>
+                <span>Repo privado</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="projeto projeto--4" data-revelar>
+            <a class="projeto__midia" href="https://tati-gastro.vercel.app" target="_blank" rel="noopener" aria-label="Abrir o site Tati Gastro">
+              <img src="img/projetos/tati-gastro.jpg" alt="" width="1440" height="900" loading="lazy">
+              <ul class="tags projeto__tags" aria-label="Categorias">
+                <li class="tag tag--escura"><span class="ponto" aria-hidden="true"></span> Cliente</li>
+                <li class="tag tag--escura">Next.js</li>
+                <li class="tag tag--escura">Em desenvolvimento</li>
+              </ul>
+            </a>
+            <div class="projeto__info">
+              <h3>Tati Gastro</h3>
+              <p>Site de gastroenterologia e nutrição veterinária, com especialidades, locais de atendimento e avaliações.</p>
+              <p class="projeto__links mono">
+                <a href="https://tati-gastro.vercel.app" target="_blank" rel="noopener">Site ↗</a>
+                <span>Repo privado</span>
+              </p>
+            </div>
+          </article>
+
+          <article class="projeto projeto--5" data-revelar>
+            <a class="projeto__midia" href="https://landing-page-rc-motorista.vercel.app/" target="_blank" rel="noopener" aria-label="Abrir o site RC Motorista">
+              <img src="img/projetos/rc-motorista.jpg" alt="" width="1440" height="900" loading="lazy">
+              <ul class="tags projeto__tags" aria-label="Categorias">
+                <li class="tag tag--escura"><span class="ponto" aria-hidden="true"></span> Cliente</li>
+                <li class="tag tag--escura">React</li>
+                <li class="tag tag--escura">TypeScript</li>
+              </ul>
+            </a>
+            <div class="projeto__info">
+              <h3>RC Motorista</h3>
+              <p>Landing page para um serviço de motorista executivo, feita para gerar reservas pelo WhatsApp.</p>
+              <p class="projeto__links mono">
+                <a href="https://landing-page-rc-motorista.vercel.app/" target="_blank" rel="noopener">Site ↗</a>
+                <a href="https://github.com/pedropcorsini/landing-page-rc-motorista" target="_blank" rel="noopener">Repo ↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="projeto projeto--6" data-revelar>
+            <a class="projeto__midia" href="https://lead-capture-frontend.vercel.app" target="_blank" rel="noopener" aria-label="Abrir o app PicCapture">
+              <img src="img/projetos/piccapture.jpg" alt="" width="1440" height="900" loading="lazy">
+              <ul class="tags projeto__tags" aria-label="Categorias">
+                <li class="tag tag--escura">Full stack</li>
+                <li class="tag tag--escura">FastAPI</li>
+                <li class="tag tag--escura">Next.js</li>
+              </ul>
+            </a>
+            <div class="projeto__info">
+              <h3>PicCapture</h3>
+              <p>Captação de leads em eventos: cadastro em duas etapas, foto com moldura ao vivo, card com QR code e painel de admin. Fotos e cards guardados no S3.</p>
+              <p class="projeto__links mono">
+                <a href="https://lead-capture-frontend.vercel.app" target="_blank" rel="noopener">Site ↗</a>
+                <a href="https://github.com/pedropcorsini/lead-capture-frontend" target="_blank" rel="noopener">Front ↗</a>
+                <a href="https://github.com/pedropcorsini/lead-capture-backend" target="_blank" rel="noopener">Back ↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="projeto projeto--7" data-revelar>
+            <a class="projeto__midia" href="https://macro-tracker-red.vercel.app" target="_blank" rel="noopener" aria-label="Abrir o app Macro Tracker">
+              <img src="img/projetos/macro-tracker.jpg" alt="" width="1440" height="900" loading="lazy">
+              <ul class="tags projeto__tags" aria-label="Categorias">
+                <li class="tag tag--escura">Estudo</li>
+                <li class="tag tag--escura">React</li>
+                <li class="tag tag--escura">Supabase</li>
+              </ul>
+            </a>
+            <div class="projeto__info">
+              <h3>Macro Tracker</h3>
+              <p>App de nutrição com refeições, metas, hidratação, gráficos, três idiomas e um assistente de IA por chat.</p>
+              <p class="projeto__links mono">
+                <a href="https://macro-tracker-red.vercel.app" target="_blank" rel="noopener">Site ↗</a>
+                <a href="https://github.com/pedropcorsini/macro-tracker" target="_blank" rel="noopener">Repo ↗</a>
+              </p>
+            </div>
+          </article>
+
+          <article class="projeto projeto--8" data-revelar>
+            <a class="projeto__midia projeto__midia--terminal" href="https://github.com/pedropcorsini/fluxrate" target="_blank" rel="noopener" aria-label="Abrir o repositório FluxRate">
+              <pre class="terminal" aria-hidden="true"><span class="terminal__cmd">GET /api/quotes?asset=BTC&amp;ref=BRL</span>
+<span class="terminal__ok">200 OK</span>
+{
+  "asset": "BTC",
+  "reference": "BRL",
+  "source": "CoinGecko"
+}
+
+<span class="terminal__cmd">celery beat</span> <span class="terminal__ok">●</span> sync_quotes_task
+a cada 5 minutos</pre>
+              <ul class="tags projeto__tags" aria-label="Categorias">
+                <li class="tag tag--escura">Back-end</li>
+                <li class="tag tag--escura">Django REST</li>
+                <li class="tag tag--escura">Celery</li>
+              </ul>
+            </a>
+            <div class="projeto__info">
+              <h3>FluxRate</h3>
+              <p>API de cotações de moedas e cripto com sincronização agendada a cada 5 minutos (Celery e Redis) e dashboard em React.</p>
+              <p class="projeto__links mono">
+                <a href="https://github.com/pedropcorsini/fluxrate" target="_blank" rel="noopener">Repo ↗</a>
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+        <a class="ver-todos" href="https://github.com/pedropcorsini?tab=repositories" target="_blank" rel="noopener" data-revelar>Ver todos<sup>®</sup></a>
+      </div>
+    </section>
+
+    <!-- 4. FAIXA DE STACK -->
+    <section class="stack" aria-labelledby="stack-titulo">
+      <div class="container">
+        <h2 class="stack__titulo" id="stack-titulo" data-revelar>Ferramentas que uso<br>no dia a dia:</h2>
+      </div>
+      <div class="faixa">
+        <ul class="faixa__trilho">
+          <li>Python</li><li>FastAPI</li><li>Django</li><li>PostgreSQL</li><li>MongoDB</li><li>React</li><li>Next.js</li><li>TypeScript</li><li>Docker</li><li>Vercel</li>
+        </ul>
+        <ul class="faixa__trilho" aria-hidden="true">
+          <li>Python</li><li>FastAPI</li><li>Django</li><li>PostgreSQL</li><li>MongoDB</li><li>React</li><li>Next.js</li><li>TypeScript</li><li>Docker</li><li>Vercel</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. SKILLS -->
+    <section class="skills" id="skills" aria-labelledby="skills-titulo">
+      <div class="container">
+        <h2 class="fantasma" id="skills-titulo" data-revelar>Skills</h2>
+
+        <div class="skills__grade">
+          <article class="skill" data-revelar>
+            <div class="skill__midia" aria-hidden="true">
+              <svg viewBox="0 0 120 120" class="skill__icone">
+                <defs><linearGradient id="cromo" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f1f1f1"/><stop offset=".5" stop-color="#7b7a7c"/><stop offset="1" stop-color="#161616"/></linearGradient></defs>
+                <ellipse cx="60" cy="30" rx="34" ry="11" fill="url(#cromo)"/>
+                <path d="M26 30v60c0 6 15 11 34 11s34-5 34-11V30c0 6-15 11-34 11S26 36 26 30z" fill="url(#cromo)"/>
+                <path d="M26 50c0 6 15 11 34 11s34-5 34-11M26 70c0 6 15 11 34 11s34-5 34-11" fill="none" stroke="#161616" stroke-opacity=".5" stroke-width="1.5"/>
+              </svg>
+            </div>
+            <h3>Back-end</h3>
+            <p>APIs REST com autenticação JWT, modelagem relacional e tarefas em segundo plano.</p>
+            <ul class="tags">
+              <li class="tag tag--escura">Python</li><li class="tag tag--escura">FastAPI</li><li class="tag tag--escura">Django REST</li><li class="tag tag--escura">Flask</li><li class="tag tag--escura">Celery</li><li class="tag tag--escura">PostgreSQL</li><li class="tag tag--escura">MongoDB</li><li class="tag tag--escura">SQLAlchemy</li>
+            </ul>
+          </article>
+
+          <article class="skill" data-revelar>
+            <div class="skill__midia" aria-hidden="true">
+              <svg viewBox="0 0 120 120" class="skill__icone">
+                <rect x="18" y="26" width="84" height="64" fill="url(#cromo)"/>
+                <rect x="18" y="26" width="84" height="12" fill="#161616" fill-opacity=".55"/>
+                <circle cx="27" cy="32" r="2.5" fill="#ff6436"/>
+                <path d="M48 56l-10 9 10 9M72 56l10 9-10 9M64 52l-8 26" fill="none" stroke="#161616" stroke-width="3.5" stroke-linecap="square"/>
+              </svg>
+            </div>
+            <h3>Front-end</h3>
+            <p>Landing pages e dashboards responsivos, com foco em conversão e acessibilidade.</p>
+            <ul class="tags">
+              <li class="tag tag--escura">HTML</li><li class="tag tag--escura">CSS</li><li class="tag tag--escura">JavaScript</li><li class="tag tag--escura">TypeScript</li><li class="tag tag--escura">React</li><li class="tag tag--escura">Next.js</li><li class="tag tag--escura">Tailwind</li><li class="tag tag--escura">Vite</li>
+            </ul>
+          </article>
+
+          <article class="skill" data-revelar>
+            <div class="skill__midia" aria-hidden="true">
+              <svg viewBox="0 0 120 120" class="skill__icone">
+                <path d="M60 14l40 22v46L60 104 20 82V36z" fill="url(#cromo)"/>
+                <path d="M20 36l40 22 40-22M60 58v46" fill="none" stroke="#161616" stroke-opacity=".6" stroke-width="2"/>
+              </svg>
+            </div>
+            <h3>DevOps e ferramentas</h3>
+            <p>Deploy, versionamento e infraestrutura. Os itens com ponto laranja estão em estudo agora.</p>
+            <ul class="tags">
+              <li class="tag tag--escura">Git</li><li class="tag tag--escura">GitHub</li><li class="tag tag--escura">Docker</li><li class="tag tag--escura">Vercel</li><li class="tag tag--escura">Supabase</li><li class="tag tag--escura">Redis</li><li class="tag tag--escura"><span class="ponto" aria-hidden="true"></span> Kubernetes <span class="sr">(em estudo)</span></li><li class="tag tag--escura"><span class="ponto" aria-hidden="true"></span> AWS <span class="sr">(em estudo)</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. TRAJETÓRIA -->
+    <section class="trajetoria" id="trajetoria" aria-labelledby="trajetoria-titulo">
+      <div class="container">
+        <header class="secao-cabeca" data-revelar>
+          <h2 class="titulo" id="trajetoria-titulo">Trajetória</h2>
+          <p class="mono rotulo">Formação, experiência e eventos</p>
+        </header>
+
+        <ol class="linha-tempo">
+          <li class="marco" data-revelar>
+            <p class="marco__data mono">2026 · atual</p>
+            <div class="marco__corpo">
+              <h3>Engenharia de Software · FIAP</h3>
+              <p>Cursando o 2º semestre. Python, front-end, desenvolvimento web e cálculo aplicado.</p>
+            </div>
+            <ul class="tags marco__tags"><li class="tag tag--escura"><span class="ponto" aria-hidden="true"></span> Formação</li></ul>
+          </li>
+          <li class="marco" data-revelar>
+            <p class="marco__data mono">2026 · atual</p>
+            <div class="marco__corpo">
+              <h3>Desenvolvedor freelancer</h3>
+              <p>Sites e sistemas para clientes, com landing pages focadas em conversão por WhatsApp: Tia Nena, ELO Hemoterapia, Renata Oftalmo, Tati Gastro e RC Motorista.</p>
+            </div>
+            <ul class="tags marco__tags"><li class="tag tag--escura">Experiência</li></ul>
+          </li>
+          <li class="marco" data-revelar>
+            <p class="marco__data mono">Jun 2026</p>
+            <div class="marco__corpo">
+              <h3>Global Solution FIAP · Orbitrace</h3>
+              <p>Monitor de conjunções orbitais para satélites brasileiros em órbita baixa (CBERS-4A, Amazonia-1, SCD-2), com propagação pela 3ª Lei de Kepler e relatório de risco por faixa de órbita.</p>
+              <p class="projeto__links mono">
+                <a href="https://github.com/pedropcorsini/orbitrace-python-fiap" target="_blank" rel="noopener">Python ↗</a>
+                <a href="https://github.com/pedropcorsini/orbitrace-calculo-fiap" target="_blank" rel="noopener">Cálculo ↗</a>
+              </p>
+            </div>
+            <ul class="tags marco__tags"><li class="tag tag--escura">Evento</li></ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <!-- 7. RODAPÉ -->
+  <footer class="rodape" id="contato" aria-labelledby="rodape-titulo">
+    <div class="container">
+      <h2 class="rodape__marca" id="rodape-titulo" data-revelar><span aria-hidden="true">©</span> Pedro Corsini</h2>
+
+      <div class="rodape__grade">
+        <nav class="rodape__col" aria-label="Rodapé">
+          <a href="#sobre">Sobre</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#skills">Skills</a>
+          <a href="#trajetoria">Trajetória</a>
+        </nav>
+
+        <div class="rodape__col">
+          <a href="https://github.com/pedropcorsini" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/pedropassoscorsini/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:pedro.pcorsini@gmail.com">E-mail</a>
+        </div>
+
+        <div class="cracha" id="cracha" aria-hidden="true">
+          <div class="cracha__presilha"></div>
+          <div class="cracha__corpo">
+            <span class="cracha__topo">Backend</span>
+            <svg viewBox="0 0 120 120" class="cracha__icone"><path d="M60 14l40 22v46L60 104 20 82V36z" fill="url(#cromo)"/></svg>
+            <span class="cracha__base">Developer</span>
+          </div>
+        </div>
+
+        <div class="rodape__cta">
+          <p>Tem um projeto em mente?<br>Bora construir junto.</p>
+          <a class="tag tag--escura tag--grande" href="mailto:pedro.pcorsini@gmail.com"><span class="ponto" aria-hidden="true"></span> Fale comigo</a>
+        </div>
+      </div>
+
+      <div class="rodape__base mono">
+        <p>© 2026 Pedro Passos Corsini</p>
+        <p>Feito com IA no Checkpoint 6 · FIAP</p>
+        <a class="pilula pilula--topo" href="#topo" aria-label="Voltar ao topo">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
